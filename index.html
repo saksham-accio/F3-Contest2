@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F3 - Contest2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="fetchDataWrapper">
+        <h1>Weather Api </h1>
+        <button id="fetchBtn" onclick="getlocation();">Fetch Data</button>
+
+        <div class="mapWrapper">
+            <div class="mapTop">
+                <div class="latitude">
+                    <span>Lat : </span>
+                    <span id="latitudeValue"></span>
+                </div>
+                <div class="longitude">
+                    <span>Long : </span>
+                    <span id="longitudeValue"></span>
+                </div>
+            </div>
+            <div id="map">
+            </div>
+        </div>
+
+        <div class="weatherWrapper">
+            <h1>Weather Data</h1>
+            <div class="weatherContent">
+    
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://maps.google.com/maps/api/js?sensor=false"> </script> 
+    <script src="./script.js"></script>
+</body>
+</html>
